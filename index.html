@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Xhakinha — Link na Bio</title>
+    <link rel="preload" href="assets/TAPELOOP.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="background" aria-hidden="true">
+      <div class="background__image"></div>
+      <div class="background__overlay"></div>
+      <div class="background__pattern"></div>
+    </div>
+
+    <main class="shell">
+      <header class="topbar">
+        <div class="tabs" role="tablist" aria-label="Seções">
+          <button class="tab is-active" role="tab" aria-selected="true" data-tab="selected">Selected</button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="content">Content</button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="foryou">For You</button>
+        </div>
+      </header>
+
+      <section class="deck-area">
+        <div class="deck" aria-live="polite"></div>
+      </section>
+
+      <section class="preview" aria-live="polite">
+        <div class="preview__card">
+          <div class="preview__media"></div>
+          <div class="preview__content">
+            <span class="preview__eyebrow">Agora tocando</span>
+            <h2 class="preview__title">Selecione um card</h2>
+            <p class="preview__description">Arraste para o lado ou toque para abrir.</p>
+            <button class="preview__cta">Abrir agora</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+      <div class="modal__backdrop"></div>
+      <div class="modal__content" role="document">
+        <button class="modal__close" aria-label="Fechar">✕</button>
+        <div class="modal__media"></div>
+        <div class="modal__text">
+          <h3 class="modal__title"></h3>
+          <p class="modal__body"></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js" defer></script>
+  </body>
+</html>
